@@ -28,12 +28,12 @@ MonoBehaviour:
   RateBoxShow: 0
   BannerDisplayOnInit: 1
   InterstitialInterval: 30
-  Name: 
-  FbAppId: 
+  Name: Hyper Casual Gaming Game Dev
+  FbAppId: 1104954633674603
   appleId: 
   MmpAdjust: 0
   MmpAdjustAppToken: 
-  MmpTenjin: 0
+  MmpTenjin: 1
   AdMobAndroidAppId: 
   AdMobIosAppId: 
   IosInterstitial: 
