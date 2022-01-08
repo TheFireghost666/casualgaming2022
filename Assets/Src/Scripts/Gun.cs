@@ -5,6 +5,7 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     public Animator _animator;
+    public AudioSource _shootingSound;
 
     void Update()
     {
@@ -17,6 +18,7 @@ public class Gun : MonoBehaviour
             {
                 case TouchPhase.Began:
                     _animator.SetBool("shooting", true);
+                    _shootingSound.Play();
                     break;
                 case TouchPhase.Ended:
                     _animator.SetBool("shooting", false);
