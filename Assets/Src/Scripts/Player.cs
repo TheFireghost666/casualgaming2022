@@ -11,7 +11,7 @@ namespace YsoCorp {
         private static float RIGHT_LIMIT = 2f;
         private static float SPEED_ROTATION = 25f;
         private static float SPEED_ACCELERATION = 0.5f;
-        private static float SPEED = 4f;
+        private float SPEED = 4f;
         private static float ROTATION_SENSITIVITY = 0.2f;
         private static float MOVE_SENSITIVITY = 0.01f; 
         private static float MAX_ANGLE = 35f;
@@ -50,6 +50,10 @@ namespace YsoCorp {
             } else if (states == Game.States.Lose) {
                 this._isMoving = false;
             }
+        }
+
+        public void TargetBoost() {
+            this.SPEED += 4f;
         }
 
         public void Reset() {
