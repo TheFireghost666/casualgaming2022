@@ -53,7 +53,12 @@ namespace YsoCorp {
         }
 
         public void TargetBoost() {
-            this.SPEED += 4f;
+            this.SPEED += 0.2f;
+        }
+
+        public void ResetSpeed()
+        {
+            this.SPEED = 4f;
         }
 
         public void Reset() {

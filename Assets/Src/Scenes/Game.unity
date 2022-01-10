@@ -8610,6 +8610,7 @@ MonoBehaviour:
   _cam: {fileID: 534669904}
   _animator: {fileID: 1787310025}
   _shootingSound: {fileID: 1787310027}
+  targetboost: {fileID: 217317018}
 --- !u!95 &1787310025
 Animator:
   serializedVersion: 3
