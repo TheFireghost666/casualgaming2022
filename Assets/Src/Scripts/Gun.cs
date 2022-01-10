@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Gun : MonoBehaviour
 {
     public Camera _cam;
     public Animator _animator;
     public AudioSource _shootingSound;
+    
+    public YsoCorp.Player targetboost;
+    //public ScriptName tar = gameObject.GetComponent<Player>();
+    
 
     void Start()
     {
@@ -38,6 +43,7 @@ public class Gun : MonoBehaviour
                         if (hit.transform.gameObject.tag == ("Target"))
                         {
                             Destroy(hit.transform.gameObject);
+                            targetboost.TargetBoost();
                         }
                         else
                         {
